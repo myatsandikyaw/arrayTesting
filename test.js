@@ -26,7 +26,7 @@ const pendingOrder = orders.filter(o => o.status === "pending");
 console.log(pendingOrder);
 
 //Get names of orders with status "paid" with filter
-const paidOrder = orders.filter(o => o.status === "paid");
+const paidOrder = orders.filter(o => o.status === "paid").map(o=>o.customer);
 console.log(paidOrder);
 
 //Find order with id
